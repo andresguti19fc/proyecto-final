@@ -12,6 +12,7 @@ html {
 
 body {
   /***variables***/
+  width: 100vw;
   display: flex;
   flex-direction: column;
   height: 100%;
