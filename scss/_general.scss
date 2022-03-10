@@ -4,7 +4,8 @@
 }
 html {
   height: $porcentaje; /***variables***/
-  
+  width: 100vw;
+  overflow-x:hidden;
 }
 body {
   /***variables***/
