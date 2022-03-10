@@ -1,0 +1,82 @@
+@import "variables";
+* {
+  @include resets; /*** mixins ***/
+}
+html {
+  height: $porcentaje; /***variables***/
+  
+}
+body {
+  /***variables***/
+  display: flex;
+  flex-direction: column;
+  height: $porcentaje; /***variables***/
+  overflow-x:hidden;
+  
+}
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+    &:hover{
+      background-color: $body-bg-color;
+      color: $bg-color;
+    }
+}
+
+.titulo__principal {
+  font-family:'Poppins', sans-serif;
+  font-weight: 700;
+  color: $text1; /***variables***/
+}
+.masthead {
+  position: relative;
+  width: $porcentaje; /***variables***/
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.678) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url("https://i.ibb.co/xXMLsXg/german.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow-x: hidden;
+  object-fit: cover;
+}
+.col1 {
+  @include col1(); /*** mixins ***/
+}
+.row1 {
+  @include row1(); /*** mixins ***/
+}
+.span--color {
+  color: $bg-color;
+}
+.subir{
+  position: fixed;
+  top: 90%;
+  left: 92%;
+  
+  a{
+    color: $span-color;
+    i{
+      color:$span-color;
+      font-size: 40px;
+      &:hover{
+        color: $text1;
+      }
+    }
+  }
+}

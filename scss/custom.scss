@@ -1,0 +1,10 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:ital,wght@0,100;0,200;0,400;1,300;1,700 & family= Lato:ital,wght@0,100; 0,300;0,400;0,700;1,100;1,300;1,700 & family= Atuendo:wght@100 & family= Poppins:ital,wght@0,400;0,800;1,100 & family= Urbanist:wght@300;400;500;700 & display= intercambio');
+$body-bg: $body-bg-color;
+$body-color: #fff;
+$font-family-base:'Poppins', sans-serif;
+$primary:$body-bg-color;
+$secondary:$span-color;
+$dark:rgba(0, 1, 37, 0.918);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
