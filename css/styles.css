@@ -7,16 +7,13 @@
 
 html {
   height: 100%;
-  /***variables***/
 }
 
 body {
-  /***variables***/
   width: 100vw;
   display: flex;
   flex-direction: column;
   height: 100%;
-  /***variables***/
   overflow-x: hidden;
 }
 
