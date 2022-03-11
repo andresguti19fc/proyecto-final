@@ -78,7 +78,7 @@ body {
 }
 
 .subir {
-  position: sticky;
+  position: fixed;
   top: 90%;
   left: 92%;
 }
