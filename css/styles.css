@@ -8,8 +8,6 @@
 html {
   height: 100%;
   /***variables***/
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 body {
@@ -19,7 +17,6 @@ body {
   flex-direction: column;
   height: 100%;
   /***variables***/
-  overflow-x: hidden;
 }
 
 .btn {
@@ -80,12 +77,8 @@ body {
   color: #19f6fd;
 }
 
-.overflow-x {
-  overflow-x: hidden;
-}
-
 .subir {
-  position: fixed;
+  position: sticky;
   top: 90%;
   left: 92%;
 }
@@ -383,6 +376,62 @@ body {
   }
 }
 
+.animate-entrada {
+  animation: entrada 800ms ease;
+}
+
+.animate-salida {
+  animation: salida 800ms ease;
+}
+
+.animate-arriba {
+  animation: arriba 800ms ease;
+}
+
+.animate-abajo {
+  animation: abajo 800ms ease;
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes salida {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes arriba {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .container404 {
   display: flex;
   flex-direction: column;
