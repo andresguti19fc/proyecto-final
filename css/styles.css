@@ -80,6 +80,10 @@ body {
   color: #19f6fd;
 }
 
+.overflow-x {
+  overflow-x: hidden;
+}
+
 .subir {
   position: fixed;
   top: 90%;

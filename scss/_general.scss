@@ -66,6 +66,9 @@ body {
 .span--color {
   color: $bg-color;
 }
+.overflow-x{
+  overflow-x: hidden;
+}
 .subir{
   position: fixed;
   top: 90%;
