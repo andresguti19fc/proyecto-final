@@ -4,8 +4,7 @@
 }
 html {
   height: $porcentaje; /***variables***/
-  width: 100vw;
-  overflow-x:hidden;
+
 }
 body {
   /***variables***/
@@ -13,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   height: $porcentaje; /***variables***/
-  overflow-x:hidden;
+  
   
 }
 .btn {
@@ -66,11 +65,9 @@ body {
 .span--color {
   color: $bg-color;
 }
-.overflow-x{
-  overflow-x: hidden;
-}
+
 .subir{
-  position: fixed;
+  position: sticky;
   top: 90%;
   left: 92%;
   
