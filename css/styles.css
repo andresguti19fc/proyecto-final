@@ -160,7 +160,7 @@ body {
 }
 .img__galeria:hover {
   filter: blur(1.45px);
-  transform: scale(1.05);
+  transform: scale(0.95);
 }
 
 .vid__galeria {
@@ -225,6 +225,14 @@ body {
 }
 
 /***lightbox***/
+.click {
+  transition: transform 0.2s ease;
+  opacity: 0;
+}
+.click:hover {
+  opacity: 1;
+}
+
 /***anidaciones 5***/
 .container__contactos {
   height: 100%;
@@ -303,7 +311,7 @@ body {
   box-shadow: 0 0 10px #19f6fd, 0 0 20px #19f6fd;
   background: #19f6fd;
   color: #222222;
-  transition: background 0.2s ease-out;
+  transition: background 1s ease-in;
 }
 .container__contactos .contenido__contactos .contactos__informacion {
   display: flex;

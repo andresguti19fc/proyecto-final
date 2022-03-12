@@ -1,7 +1,8 @@
 
 /***galeria***/
 /***anidaciones 4***/
-.img__galeria{ width: 100%; 
+.img__galeria{ 
+    width: 100%; 
     height: 100%; 
     object-fit: cover; 
     overflow: hidden; 
@@ -10,7 +11,7 @@
     transition: all 0.2s ease;
     &:hover{
       filter: blur(1.45px);
-      transform:scale(1.05);
+      transform:scale(.95);
     }
 }
 
@@ -76,4 +77,13 @@
   font-size: 24px;
 
 }
+
 /***lightbox***/
+
+.click{
+  transition: transform .2s ease;
+  opacity: 0;
+  &:hover{
+    opacity: 1;
+  }
+}
