@@ -1,21 +1,21 @@
-
 /***galeria***/
 /***anidaciones 4***/
-.img__galeria{ 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    overflow: hidden; 
-    border: 4px solid rgb(25, 246, 253);
-    border-radius: 10px;  
-    transition: all 0.2s ease;
-    &:hover{
-      filter: blur(1.45px);
-      transform:scale(.95);
-    }
+.img__galeria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border: 4px solid rgb(25, 246, 253);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    filter: blur(1.45px);
+    transform: scale(.95);
+  }
 }
 
-.vid__galeria{
+.vid__galeria {
   width: 100%;
   height: 40vh;
   object-fit: cover;
@@ -26,7 +26,7 @@
 
 
 /***lightbox***/
-.lightbox{
+.lightbox {
   position: fixed;
   top: 0;
   left: 0;
@@ -39,19 +39,21 @@
   align-items: center;
   transition: transform .2s ease-in-out;
   transform: scale(0);
-  img{
+
+  img {
     width: 80vw;
     max-height: 80vh;
-    object-fit:scale-down;
+    object-fit: scale-down;
     overflow: hidden;
   }
 
-}
-.lightbox:target{
-  transform: scale(1);
+  &:target {
+    transform: scale(1);
+  }
 }
 
-.close{
+
+.close {
   display: block;
   position: absolute;
   top: 80px;
@@ -63,13 +65,14 @@
   height: 24px;
   line-height: 24px;
   text-align: center;
-  
+
   font-size: 20px;
 }
-.next{
+
+.next {
   display: block;
   background: rgb(25, 246, 253);
-  color:#fff;
+  color: #fff;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -79,11 +82,3 @@
 }
 
 /***lightbox***/
-
-.click{
-  transition: transform .2s ease;
-  opacity: 0;
-  &:hover{
-    opacity: 1;
-  }
-}

@@ -1,44 +1,53 @@
 @import "variables";
+
 @mixin resets {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 @mixin tamaño {
-    height: $porcentaje;
-    width: $porcentaje;
+  height: $porcentaje;
+  width: $porcentaje;
 }
+
 @mixin col1 {
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 @mixin row1 {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex: 1 1 36rem;
   flex-direction: row;
 }
+
 @mixin grid-contactos {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: auto;
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-        width: 70vw;
-        height: $porcentaje;              /***variables***/
-        border-radius: $border-radius-form;  /***variables***/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  width: 70vw;
+  height: $porcentaje;
+  /***variables***/
+  border-radius: $border-radius-form;
+  /***variables***/
 }
-@mixin grid__area--uno{
-  grid-template-areas: 
-  "form form form"
-  "info info info"
-  "map map map";
+
+@mixin grid__area--uno {
+  grid-template-areas:
+    "form form form"
+    "info info info"
+    "map map map";
 }
+
 @mixin grid__area--dos {
-  grid-template-areas: 
-  "form form info"
-  "form form info"
-  "map map map";
+  grid-template-areas:
+    "form form info"
+    "form form info"
+    "map map map";
 }

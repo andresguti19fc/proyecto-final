@@ -1,52 +1,62 @@
-.animate-entrada{
+.animate-entrada {
     animation: entrada 800ms ease;
 }
-.animate-salida{
+
+.animate-salida {
     animation: salida 800ms ease;
 }
-.animate-arriba{
+
+.animate-arriba {
     animation: arriba 800ms ease;
 }
-.animate-abajo{
+
+.animate-abajo {
     animation: abajo 800ms ease;
 }
 
 @keyframes entrada {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0px);
     }
 }
+
 @keyframes salida {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(100px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0px);
     }
 }
+
 @keyframes arriba {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-100px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
+
 @keyframes abajo {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(100px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0px);
     }

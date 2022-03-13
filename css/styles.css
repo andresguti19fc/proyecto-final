@@ -193,7 +193,6 @@ body {
   object-fit: scale-down;
   overflow: hidden;
 }
-
 .lightbox:target {
   transform: scale(1);
 }
@@ -225,14 +224,6 @@ body {
 }
 
 /***lightbox***/
-.click {
-  transition: transform 0.2s ease;
-  opacity: 0;
-}
-.click:hover {
-  opacity: 1;
-}
-
 /***anidaciones 5***/
 .container__contactos {
   height: 100%;

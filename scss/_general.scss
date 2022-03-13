@@ -1,20 +1,27 @@
 @import "variables";
+
 * {
-  @include resets; /*** mixins ***/
+  @include resets;
+  /*** mixins ***/
 }
+
 html {
-  height: $porcentaje; /***variables***/
+  height: $porcentaje;
+  /***variables***/
 
 }
+
 body {
   /***variables***/
   width: 100vw;
   display: flex;
   flex-direction: column;
-  height: $porcentaje; /***variables***/
-  
-  
+  height: $porcentaje;
+  /***variables***/
+
+
 }
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -25,29 +32,31 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
-    &:hover{
-      background-color: $body-bg-color;
-      color: $bg-color;
-    }
+
+  &:hover {
+    background-color: $body-bg-color;
+    color: $bg-color;
+  }
 }
 
 .titulo__principal {
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: $text1; /***variables***/
+  color: $text1;
+  /***variables***/
 }
+
 .masthead {
   position: relative;
-  width: $porcentaje; /***variables***/
+  width: $porcentaje;
+  /***variables***/
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.678) 0%,
       rgba(0, 0, 0, 0.7) 75%,
-      #000 100%
-    ),
+      #000 100%),
     url("https://i.ibb.co/xXMLsXg/german.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -56,27 +65,34 @@ body {
   overflow-x: hidden;
   object-fit: cover;
 }
+
 .col1 {
-  @include col1(); /*** mixins ***/
+  @include col1();
+  /*** mixins ***/
 }
+
 .row1 {
-  @include row1(); /*** mixins ***/
+  @include row1();
+  /*** mixins ***/
 }
+
 .span--color {
   color: $bg-color;
 }
 
-.subir{
+.subir {
   position: fixed;
   top: 90%;
   left: 92%;
-  
-  a{
+
+  a {
     color: $span-color;
-    i{
-      color:$span-color;
+
+    i {
+      color: $span-color;
       font-size: 40px;
-      &:hover{
+
+      &:hover {
         color: $text1;
       }
     }
