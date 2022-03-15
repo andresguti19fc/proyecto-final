@@ -93,7 +93,7 @@ body {
   color: #fff;
 }
 
-/***anidaciones 1***/
+/***lista desordenada redes sociales***/
 .redes__sociales ul li {
   text-align: center;
   margin: 10px 30px;
@@ -109,6 +109,28 @@ body {
   border-radius: 10px;
 }
 
+/***lista desordenada redes sociales***/
+/*** lista desordenada navbar ***/
+.enlaces {
+  text-decoration: none;
+  position: relative;
+}
+.enlaces::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 0.5px;
+  background: #fff;
+  transition: 0.3s ease-out;
+}
+.enlaces:hover::after {
+  left: 0;
+  width: 98%;
+}
+
+/*** lista desordenada navbar ***/
 /***anidaciones 2***/
 /*card*/
 .card1 {

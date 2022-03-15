@@ -6,5 +6,12 @@ $font-family-base:'Poppins', sans-serif;
 $primary:$body-bg-color;
 $secondary:$span-color;
 $dark:rgba(0, 1, 37, 0.918);
+.navlink{
+    text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";

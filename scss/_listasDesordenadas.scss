@@ -1,4 +1,4 @@
-/***anidaciones 1***/
+/***lista desordenada redes sociales***/
 .redes__sociales {
     ul {
         li {
@@ -20,3 +20,30 @@
         }
     }
 }
+
+/***lista desordenada redes sociales***/
+
+/*** lista desordenada navbar ***/
+.enlaces {
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        height: .5px;
+        background: #fff;
+        transition: .3s ease-out;
+    }
+
+    &:hover::after {
+        left: 0;
+        width: 98%;
+
+    }
+}
+
+/*** lista desordenada navbar ***/
