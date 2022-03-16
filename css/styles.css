@@ -11,12 +11,11 @@ html {
 }
 
 body {
-  /***variables***/
   width: 100vw;
   display: flex;
   flex-direction: column;
   height: 100%;
-  /***variables***/
+  overflow-x: hidden;
 }
 
 .btn {
@@ -87,7 +86,7 @@ body {
 }
 .subir a i {
   color: #19f6fd;
-  font-size: 40px;
+  font-size: 30px;
 }
 .subir a i:hover {
   color: #fff;

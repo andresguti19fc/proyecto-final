@@ -7,20 +7,18 @@
 
 html {
   height: $porcentaje;
+  
   /***variables***/
 
 }
 
 body {
-  /***variables***/
   width: 100vw;
   display: flex;
   flex-direction: column;
   height: $porcentaje;
-  /***variables***/
-
-
-}
+  overflow-x: hidden;
+  }
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -83,17 +81,17 @@ body {
   position: fixed;
   top: 90%;
   left: 92%;
-
   a {
     color: $span-color;
 
     i {
       color: $span-color;
-      font-size: 40px;
-
+      font-size: 30px;
       &:hover {
         color: $text1;
       }
     }
   }
 }
+
+ 
