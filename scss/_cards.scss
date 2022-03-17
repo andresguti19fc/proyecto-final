@@ -1,7 +1,7 @@
 /***anidaciones 2***/
 /*card*/
 .card1 {
-  width: 100%;
+  width: $porcentaje;
   background-color: $body-bg-color;
   /***variables***/
   color: $text1;
@@ -17,7 +17,7 @@
     transform: scale(1.03);
 
     img {
-      width: 100%;
+      width: $porcentaje;
     }
   }
 

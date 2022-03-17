@@ -1,20 +1,17 @@
 /***anidaciones 5***/
 .container__contactos {
   @include tamaño;
-  /*** mixins ***/
   @include col1;
-  /*** mixins ***/
   align-items: center;
   border-radius: $border-radius-form;
 
-  /***variables***/
   h1 {
     padding-top: 2rem;
   }
 
   /***anidaciones 6***/
   .contenido__contactos {
-    @include grid-contactos;
+    @include grid__contactos;
     @include grid__area--uno;
 
     .contactos__form {
@@ -137,7 +134,7 @@
     }
 
     @media (min-width: 1000px) {
-      @include grid-contactos;
+      @include grid__contactos;
       @include grid__area--dos;
       /*** mixins ***/
     }

@@ -26,7 +26,30 @@
   flex-direction: row;
 }
 
-@mixin grid-contactos {
+@mixin img__galeria {
+  object-fit: cover;
+  overflow: hidden;
+  border: 4px solid rgb(25, 246, 253);
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+}
+
+@mixin img__galeria--uno {
+  width: 300px;
+  height: 300px; 
+}
+
+@mixin img__galeria--dos {
+  width: 240px;
+  height: 240px;
+}
+
+@mixin grid__contactos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;

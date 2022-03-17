@@ -7,7 +7,7 @@
 
 html {
   height: $porcentaje;
-  
+
   /***variables***/
 
 }
@@ -18,13 +18,12 @@ body {
   flex-direction: column;
   height: $porcentaje;
   overflow-x: hidden;
-  }
+}
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -50,11 +49,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.678) 0%,
-      rgba(0, 0, 0, 0.7) 75%,
-      #000 100%),
-    url("https://i.ibb.co/xXMLsXg/german.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.678) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("https://i.ibb.co/xXMLsXg/german.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -62,9 +57,11 @@ body {
   overflow-x: hidden;
   object-fit: cover;
 }
-.section__carrusel{
+
+.section__carrusel {
   min-height: 100vh;
 }
+
 .col1 {
   @include col1();
   /*** mixins ***/
@@ -83,12 +80,14 @@ body {
   position: fixed;
   top: 90%;
   left: 92%;
+
   a {
     color: $span-color;
 
     i {
       color: $span-color;
       font-size: 30px;
+
       &:hover {
         color: $text1;
       }

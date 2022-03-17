@@ -1,55 +1,42 @@
 /***galeria***/
-/***anidaciones 4***/
-.carrusel{
-  height:100vh;
-  width: 100vw;
-  margin-bottom: 1rem;
-}
 .img__galeria {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  overflow: hidden;
-  border: 4px solid rgb(25, 246, 253);
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  place-content: center;
-  text-align: center;
-   @media (max-width: 400px){
-     width: 240px;
-     height: 240px;
-   }
+  @include img__galeria;
+  @include img__galeria--uno;
+
+  @media (max-width: 400px) {
+    @include img__galeria--dos
+  }
+
   &:hover {
     filter: blur(.5px);
     transform: scale(.95);
 
   }
-    
-  h3{
+
+  h3 {
     position: absolute;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     text-transform: uppercase;
     font-weight: 700;
-    width: 100%;
-    height: 100%;
-    padding: 100%;
+    width: $porcentaje;
+    height: $porcentaje;
+    padding: $porcentaje;
     display: flex;
     justify-content: center;
     opacity: 0;
-      &:hover{
-        opacity: 1;
-      }
-  }
-    img{
-      width: 100%;
+
+    &:hover {
+      opacity: 1;
     }
+  }
+
+  img {
+    width: $porcentaje;
+  }
 }
 
 .vid__galeria {
-  width: 100%;
+  width: $porcentaje;
   height: 40vh;
   object-fit: cover;
   overflow: hidden;
@@ -91,8 +78,8 @@
   position: absolute;
   top: 80px;
   right: 40px;
-  background: rgb(25, 246, 253);
-  color: #fff;
+  background: $span-color;
+  color: $text1;
   text-decoration: none;
   width: 24px;
   height: 24px;
@@ -105,7 +92,7 @@
 .next {
   display: block;
   background: rgb(25, 246, 253);
-  color: #fff;
+  color: $text1;
   width: 30px;
   height: 30px;
   line-height: 30px;
