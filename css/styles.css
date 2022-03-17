@@ -55,6 +55,10 @@ body {
   object-fit: cover;
 }
 
+.section__carrusel {
+  min-height: 100vh;
+}
+
 .col1 {
   display: flex;
   flex-direction: column;
@@ -104,7 +108,7 @@ body {
   font-size: 40px;
 }
 .redes__sociales ul li a i:hover {
-  background-color: rgba(255, 255, 255, 0.178);
+  color: #fff;
   border-radius: 10px;
 }
 
@@ -189,6 +193,12 @@ body {
   align-items: center;
   place-content: center;
   text-align: center;
+}
+@media (max-width: 400px) {
+  .img__galeria {
+    width: 240px;
+    height: 240px;
+  }
 }
 .img__galeria:hover {
   filter: blur(0.5px);

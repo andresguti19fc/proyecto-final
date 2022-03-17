@@ -62,7 +62,9 @@ body {
   overflow-x: hidden;
   object-fit: cover;
 }
-
+.section__carrusel{
+  min-height: 100vh;
+}
 .col1 {
   @include col1();
   /*** mixins ***/
