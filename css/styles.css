@@ -56,7 +56,7 @@ body {
 }
 
 .section__carrusel {
-  min-height: 100vh;
+  height: 100%;
 }
 
 .col1 {
@@ -352,7 +352,7 @@ body {
   box-shadow: 0 0 10px #19f6fd, 0 0 20px #19f6fd;
   background: #19f6fd;
   color: #222222;
-  transition: background 1s ease-in;
+  transition: background 0.5s ease-in;
 }
 .container__contactos .contenido__contactos .contactos__informacion {
   display: flex;
