@@ -1,20 +1,32 @@
 /***lista desordenada redes sociales***/
 .redes__sociales {
     ul {
+        padding: 0;
+
+        @media (max-width: 480px) {
+            @include col1;
+        }
+
         li {
             text-align: center;
             margin: 10px 30px;
 
             a {
                 list-style: none;
+                font-size: 14px;
 
                 i {
                     font-size: 40px;
+
+                    @media (max-width: 480px) {
+                        font-size: 30px;
+                    }
 
                     &:hover {
                         color: $text1;
                         border-radius: 10px;
                     }
+
                 }
             }
         }

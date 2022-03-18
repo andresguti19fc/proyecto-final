@@ -97,15 +97,31 @@ body {
 }
 
 /***lista desordenada redes sociales***/
+.redes__sociales ul {
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .redes__sociales ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .redes__sociales ul li {
   text-align: center;
   margin: 10px 30px;
 }
 .redes__sociales ul li a {
   list-style: none;
+  font-size: 14px;
 }
 .redes__sociales ul li a i {
   font-size: 40px;
+}
+@media (max-width: 480px) {
+  .redes__sociales ul li a i {
+    font-size: 30px;
+  }
 }
 .redes__sociales ul li a i:hover {
   color: #fff;
